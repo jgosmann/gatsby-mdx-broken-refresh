@@ -1,5 +1,5 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
+import { Link, type HeadFC, type PageProps } from "gatsby"
 
 const pageStyles = {
   color: "#232129",
@@ -139,6 +139,7 @@ const links = [
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
+      <strong><Link to="/main">Click here for MDX page reproducing the refresh problem.</Link></strong>
       <h1 style={headingStyles}>
         Congratulations
         <br />
